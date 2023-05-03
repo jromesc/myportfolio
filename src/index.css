@@ -14,7 +14,7 @@ body {
   background-color: #222326 !important;
 }
 
-a {
+a, .mynav-brand {
   cursor: pointer;
 }
 

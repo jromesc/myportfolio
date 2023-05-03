@@ -34,9 +34,12 @@ export const StyledNavbar = styled(Navbar)`
         
     }
 
+    & .mynav-brand:hover, a:hover, a.active{
+        color: rgb(255, 202, 44) !important;
+    }
+
     & a:hover, a.active{
         border-bottom: 2px solid rgb(255, 202, 44);
-        color: rgb(255, 202, 44) !important;
         transition: 0.2s ease-in-out;
     }
 
@@ -59,9 +62,7 @@ export const MaxContainer = styled.div`
     margin: ${props => props.margin ? props.margin : 'auto'};
 
     @media (max-width: 991px) {
-        h5{
-            margin-left: 70px !important;
-        }
+       
     }
 `
 
@@ -80,6 +81,7 @@ export const ImageContainer = styled(Container)`
     width: ${props => props.width};
     height: ${props => props.size}px;
     width: ${props => props.size}px;
+    min-height: ${props => props.minHeight};
     border-radius: ${props => props.radius ? props.radius : '50%'};
     overflow: ${props => props.isOverflowHidden ? "hidden" : "visible"};
     display: flex;

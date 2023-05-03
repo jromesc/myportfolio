@@ -8,7 +8,7 @@ const MyNavbar = () => {
     return (
         <StyledNavbar expand="lg">
             <Container className='py-0 d-flex' style={{ width: '100%', maxWidth: '1200px', padding: '0 1rem' }}>
-                <Navbar.Brand className='font-700'>JSC</Navbar.Brand>
+                <Navbar.Brand className='font-700 mynav-brand' to="hero" spy={true} smooth={true} duration={100}>JSC</Navbar.Brand>
                 <Navbar.Toggle className='text-warning'/>
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
