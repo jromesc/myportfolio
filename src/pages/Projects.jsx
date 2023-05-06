@@ -3,13 +3,15 @@ import { MaxContainer, ImageContainer } from '../components/styled-components/St
 import { Container, Col, Row, Card, Button } from 'react-bootstrap'
 import { BiCodeAlt } from "react-icons/bi";
 
+import AOS from 'aos';
+
 const Projects = () => {
     return (
         <div>
-            <MaxContainer>
-                <h5 className='font-700 mb-5'>PROJECTS</h5>
+            <MaxContainer overFlow='visible'>
+                <h5 className='font-700 mb-5' data-aos="fade-left">PROJECTS</h5>
                 <Row>
-                    <Col sm='6'>
+                    <Col sm='6' data-aos="zoom-in-right" data-aos-delay="100">
                         <Card className='border-0 overflow-hidden mb-4 mbg-secondary'>
                             <ImageContainer radius='0' height='270px'>
 
@@ -22,7 +24,7 @@ const Projects = () => {
                             </Container>
                         </Card>
                     </Col>
-                    <Col sm='6'>
+                    <Col sm='6' data-aos="zoom-in-left" data-aos-delay="100">
                         <Card className='border-0 overflow-hidden mb-4 mbg-secondary'>
                             <ImageContainer radius='0' height='270px'>
 
@@ -35,7 +37,7 @@ const Projects = () => {
                             </Container>
                         </Card>
                     </Col>
-                    <Col sm='6'>
+                    <Col sm='6' data-aos="zoom-in-right">
                         <Card className='border-0 overflow-hidden mb-4 mbg-secondary'>
                             <ImageContainer radius='0' height='270px'>
 
@@ -48,7 +50,7 @@ const Projects = () => {
                             </Container>
                         </Card>
                     </Col>
-                    <Col sm='6'>
+                    <Col sm='6' data-aos="zoom-in-left" data-aos-delay="100">
                         <Card className='border-0 overflow-hidden mb-4 mbg-secondary'>
                             <ImageContainer radius='0' height='270px'>
 

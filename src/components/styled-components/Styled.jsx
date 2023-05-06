@@ -60,6 +60,7 @@ export const MaxContainer = styled.div`
     max-width: 1200px;
     padding: ${props => props.padding ? props.padding : '8rem 1rem 5rem 1rem'};
     margin: ${props => props.margin ? props.margin : 'auto'};
+    overflow: ${props => props.overFlow ? props.overFlow : 'hidden'};
 
     @media (max-width: 991px) {
        
@@ -107,5 +108,19 @@ export const FooterContainer = styled(Container)`
 
     & a:hover{
         color: rgb(255, 202, 44);
+    }
+`
+
+export const BackgroundCircle = styled.div`
+    height: 8px;
+    width: 8px;
+    background-color: rgba(20, 20, 20, 0.5);
+    border-radius: 50%;
+    margin: 1rem;
+    flex-shrink: 0;
+
+    @media (max-width: 991px) {
+        height: 4px;
+        width: 4px;
     }
 `

@@ -1,6 +1,7 @@
 import React from 'react'
 import { FlexContainer, MaxContainer } from '../components/styled-components/Styled'
 import { Form, Button } from 'react-bootstrap'
+import AOS from 'aos';
 
 const Contacts = () => {
     return (
@@ -8,10 +9,10 @@ const Contacts = () => {
             <MaxContainer>
                 <FlexContainer flex_direction='column' style={{ width: '100%', maxWidth: '600px' }}>
                     <div>
-                        <h5 className='font-700 text-center'>SEND ME A MESSAGE</h5>
-                        <p className='text-center mtext-secondary mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Corporis fugit blanditiis labore recusandae aut quam porro? Sequi</p>
+                        <h5 data-aos="fade-right" className='font-700 text-center'>SEND A MESSAGE</h5>
+                        <p data-aos="fade-left" data-aos-delay="100" className='text-center mtext-secondary mb-5'>Lorem ipsum dolor sit amet consectetur adipisicing elit. <br /> Corporis fugit blanditiis labore recusandae aut quam porro? Sequi</p>
                     </div>
-                    <Form className='mborder-primary rounded p-4' style={{ width: '100%', margin: 'auto' }}>
+                    <Form data-aos="zoom-in" data-aos-delay="200" className='mborder-primary rounded p-4' style={{ width: '100%', margin: 'auto' }}>
                         <Form.Group className="mb-3" controlId="formBasicEmail">
                             <Form.Label>Name</Form.Label>
                             <Form.Control type="name" placeholder="Enter name" required className='mb-3' />

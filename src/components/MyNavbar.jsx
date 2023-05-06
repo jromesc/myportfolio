@@ -4,9 +4,12 @@ import { StyledNavbar, MaxContainer } from './styled-components/Styled'
 import { FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
 import { Link } from 'react-scroll'
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 const MyNavbar = () => {
     return (
-        <StyledNavbar expand="lg">
+        <StyledNavbar expand="lg" data-aos="fade-down">
             <Container className='py-0 d-flex' style={{ width: '100%', maxWidth: '1200px', padding: '0 1rem' }}>
                 <Navbar.Brand className='font-700 mynav-brand' to="hero" spy={true} smooth={true} duration={100}>JSC</Navbar.Brand>
                 <Navbar.Toggle className='text-warning'/>
