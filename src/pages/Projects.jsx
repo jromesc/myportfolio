@@ -8,7 +8,7 @@ import AOS from 'aos';
 const Projects = () => {
     return (
         <div>
-            <MaxContainer overFlow='visible'>
+            <MaxContainer >
                 <h5 className='font-700 mb-5' data-aos="fade-left">PROJECTS</h5>
                 <Row>
                     <Col sm='6' data-aos="zoom-in-right" data-aos-delay="100">
