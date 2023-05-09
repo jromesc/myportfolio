@@ -9,7 +9,7 @@ const Footer = () => {
     return (
         <div>
             <MaxContainer min_height='auto'>
-                <FooterContainer borderBottom='1px solid rgba(255, 255, 255, 0.08)'>
+                <FooterContainer borderbottom='1px solid rgba(255, 255, 255, 0.08)'>
                     <Row style={{ width: '100%' }}>
                         <Col md='4' className='d-flex align-items-center'>
                             <Navbar>
@@ -28,7 +28,7 @@ const Footer = () => {
                         </Col>
                     </Row>
                 </FooterContainer>
-                <FooterContainer marginTop='1rem'>
+                <FooterContainer margintop='1rem'>
                     <Navbar>
                         <Nav className="m-auto">
                             <Link className='nav-link' to="hero" spy={false} smooth={true} duration={100}>HOME</Link>

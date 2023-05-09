@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { MyNavbar, TsParticles, Footer } from './components'
+import { MyNavbar, TsParticles, Footer} from './components'
 import { Projects, About, Contacts, Hero } from './pages'
 import { Element } from 'react-scroll'
 import 'aos/dist/aos.css';

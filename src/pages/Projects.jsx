@@ -2,6 +2,7 @@ import React from 'react'
 import { MaxContainer, ImageContainer } from '../components/styled-components/Styled'
 import { Container, Col, Row, Card, Button } from 'react-bootstrap'
 import { BiCodeAlt } from "react-icons/bi";
+import { FiEye } from 'react-icons/fi';
 
 import AOS from 'aos';
 
@@ -19,7 +20,7 @@ const Projects = () => {
                             <Container className='text-center mbg-secondary p-4'>
                                 <p className='font-700 mb-0'>PROJECT TITLE</p>
                                 <p className='font-500 mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'>LIVE DEMO</Button>
+                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'><FiEye className='me-2' /> LIVE DEMO</Button>
                                 <Button variant='dark' className='mbg-secondary rounded-pill py-2 px-4 text-white border border-secondary thover-warning'><BiCodeAlt className='me-2 thover-warning' />VIEW CODE</Button>
                             </Container>
                         </Card>
@@ -32,7 +33,7 @@ const Projects = () => {
                             <Container className='text-center mbg-secondary p-4'>
                                 <p className='font-700 mb-0'>PROJECT TITLE</p>
                                 <p className='font-500 mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'>LIVE DEMO</Button>
+                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'><FiEye className='me-2' /> LIVE DEMO</Button>
                                 <Button variant='dark' className='mbg-secondary rounded-pill py-2 px-4 text-white border border-secondary thover-warning'><BiCodeAlt className='me-2 thover-warning' />VIEW CODE</Button>
                             </Container>
                         </Card>
@@ -45,7 +46,7 @@ const Projects = () => {
                             <Container className='text-center mbg-secondary p-4'>
                                 <p className='font-700 mb-0'>PROJECT TITLE</p>
                                 <p className='font-500 mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'>LIVE DEMO</Button>
+                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'><FiEye className='me-2' /> LIVE DEMO</Button>
                                 <Button variant='dark' className='mbg-secondary rounded-pill py-2 px-4 text-white border border-secondary thover-warning'><BiCodeAlt className='me-2 thover-warning' />VIEW CODE</Button>
                             </Container>
                         </Card>
@@ -58,7 +59,7 @@ const Projects = () => {
                             <Container className='text-center mbg-secondary p-4'>
                                 <p className='font-700 mb-0'>PROJECT TITLE</p>
                                 <p className='font-500 mb-3'>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'>LIVE DEMO</Button>
+                                <Button variant='warning' className='rounded-pill py-2 px-4 me-2 text-white font-500'><FiEye className='me-2' /> LIVE DEMO</Button>
                                 <Button variant='dark' className='mbg-secondary rounded-pill py-2 px-4 text-white border border-secondary thover-warning'><BiCodeAlt className='me-2 thover-warning' />VIEW CODE</Button>
                             </Container>
                         </Card>

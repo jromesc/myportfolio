@@ -80,8 +80,8 @@ export const FlexContainer = styled(Container)`
 export const ImageContainer = styled(Container)`
     height: ${props => props.height};
     width: ${props => props.width};
-    height: ${props => props.size}px;
-    width: ${props => props.size}px;
+    height: ${props => props.size};
+    width: ${props => props.size};
     min-height: ${props => props.minHeight};
     border-radius: ${props => props.radius ? props.radius : '50%'};
     overflow: ${props => props.isOverflowHidden ? "hidden" : "visible"};
@@ -97,8 +97,8 @@ export const ImageContainer = styled(Container)`
 `
 
 export const FooterContainer = styled(Container)`
-    margin-top: ${props => props.marginTop};
-    border-bottom: ${props => props.borderBottom};
+    margin-top: ${props => props.margintop};
+    border-bottom: ${props => props.borderbottom};
     padding: ${props => props.padding ? props.padding : '0'};
 
     & a{
