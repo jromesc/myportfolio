@@ -1,13 +1,14 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { Container, Nav, Navbar } from 'react-bootstrap'
 import { StyledNavbar, MaxContainer } from './styled-components/Styled'
 import { FiMail, FiLinkedin, FiGithub } from "react-icons/fi";
 import { Link } from 'react-scroll'
-
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import { ButtonContext } from '../ButtonContext';
 
 const MyNavbar = () => {
+
+    const { handleButtonClick } = useContext(ButtonContext);
+
     return (
         <StyledNavbar expand="lg" data-aos="fade-down">
             <Container className='py-0 d-flex' style={{ width: '100%', maxWidth: '1200px', padding: '0 1rem' }}>
@@ -21,9 +22,9 @@ const MyNavbar = () => {
                         <Link className='nav-link' to="contacts" spy={true} smooth={true} duration={100}>CONTACTS</Link>
                     </Nav>
                     <Nav className="ms-5 nav-icons">
-                        <Nav.Link><FiMail /></Nav.Link>
-                        <Nav.Link className='ms-2'><FiLinkedin /></Nav.Link>
-                        <Nav.Link className='ms-2'><FiGithub /></Nav.Link>
+                        <Nav.Link onClick={() => handleButtonClick('navicon')} ><FiMail /></Nav.Link>
+                        <Nav.Link onClick={() => handleButtonClick('navicon')}  className='ms-2'><FiLinkedin /></Nav.Link>
+                        <Nav.Link onClick={() => handleButtonClick('navicon')} className='ms-2'><FiGithub /></Nav.Link>
                     </Nav>
                 </Navbar.Collapse>
             </Container>

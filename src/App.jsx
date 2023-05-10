@@ -1,15 +1,23 @@
 import { useState } from 'react'
-import { MyNavbar, TsParticles, Footer} from './components'
+import { MyNavbar, TsParticles, Footer, AlertError} from './components'
 import { Projects, About, Contacts, Hero } from './pages'
+import { ButtonProvider } from './ButtonContext';
 import { Element } from 'react-scroll'
 import 'aos/dist/aos.css';
+import AOS from 'aos';
 
 function App() {
+  AOS.init()
   const [count, setCount] = useState(0)
+
+  const handleClick = () => {
+
+    console.log('sent');
+  };
 
   return (
     <>
-      <div>
+      <ButtonProvider>
         {/* <TsParticles /> */}
         <MyNavbar />
 
@@ -22,7 +30,7 @@ function App() {
         </Element>
 
         <Element name='projects'>
-          <Projects />
+          <Projects handleClick={handleClick} />
         </Element>
 
         <Element name='contacts'>
@@ -30,8 +38,8 @@ function App() {
         </Element>
 
         <Footer />
-
-      </div>
+        <AlertError handleClick={handleClick} />
+      </ButtonProvider>
     </>
   )
 }

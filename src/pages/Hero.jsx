@@ -1,20 +1,20 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { MaxContainer, FlexContainer, ImageContainer } from '../components/styled-components/Styled'
 import { SquareDots } from '../components';
 
-import AOS from 'aos';
+
 
 import { Link } from 'react-scroll'
 
 const Hero = () => {
 
-    AOS.init();
+    ;
 
     return (
         <div style={{ paddingTop: '49px' }} id='hero'>
             <MaxContainer display='flex' justify='center' padding='15rem 1rem 5rem 1rem'>
                 <div className='text-center'>
-                    <ImageContainer size='100' className='mb-4' data-aos="zoom-in" data-aos-delay="100" >
+                    <ImageContainer size='100px' className='mb-4' data-aos="zoom-in" data-aos-delay="100" >
 
                     </ImageContainer>
                     <h1 data-aos="fade-right" data-aos-delay="200">Pleasure to meet you!</h1>

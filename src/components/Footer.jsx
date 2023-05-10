@@ -21,7 +21,7 @@ const Footer = () => {
                             </Navbar>
                         </Col>
                         <Col md='4'>
-                            <ImageContainer size='50' className='mb-4'>
+                            <ImageContainer size='50px' className='mb-4'>
                             </ImageContainer>
                         </Col>
                         <Col md='4'>

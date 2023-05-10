@@ -1,9 +1,12 @@
-import React from 'react'
+import React, {useContext} from 'react'
 import { FlexContainer, MaxContainer } from '../components/styled-components/Styled'
 import { Form, Button } from 'react-bootstrap'
-import AOS from 'aos';
+import { ButtonContext } from '../ButtonContext'
 
 const Contacts = () => {
+
+    const { handleButtonClick } = useContext(ButtonContext);
+
     return (
         <div className='mbg-secondary'>
             <MaxContainer>
@@ -27,7 +30,7 @@ const Contacts = () => {
                             <Form.Label>Message</Form.Label>
                             <Form.Control as="textarea" placeholder="Enter your message here." />
                         </Form.Group>
-                        <Button variant="warning" className='text-white font-500' type="submit">
+                        <Button onClick={() => handleButtonClick('contactbutton')} variant="warning" className='text-white font-500' type="submit">
                             SUBMIT
                         </Button>
                     </Form>
