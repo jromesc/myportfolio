@@ -27,18 +27,18 @@ export const StyledNavbar = styled(Navbar)`
         }
     }
     
-    & a, span {
+    & a.nav-link, span {
         color: #fff;
         border-bottom: 2px solid transparent;
         padding-bottom: 1rem;
         
     }
 
-    & .mynav-brand:hover, a:hover, a.active{
+    & .mynav-brand:hover, a.nav-link:hover, a.active{
         color: rgb(255, 202, 44) !important;
     }
 
-    & a:hover, a.active{
+    & a.nav-link:hover, a.active{
         border-bottom: 2px solid rgb(255, 202, 44);
         transition: 0.2s ease-in-out;
     }
@@ -46,7 +46,6 @@ export const StyledNavbar = styled(Navbar)`
     & .navbar-toggler-icon {
         background-image: url("data:image/svg+xml, %3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(255, 202, 44)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22' /%3e%3c/svg%3e") !important;
     }
-
 `
 export const MaxContainer = styled.div`
     min-height: ${props => props.min_height ? props.min_height : '700px'};
@@ -87,13 +86,15 @@ export const ImageContainer = styled(Container)`
     border-radius: ${props => props.radius ? props.radius : '50%'};
     overflow: ${props => props.isOverflowHidden ? "hidden" : "visible"};
     display: flex;
-    justify-content: center;
+    justify-content: ${props => props.justify ? props.justify : 'center'};
     align-items: center;
     background-color: ${props => props.mbg ? props.mbg : '#fff'};
     margin: ${props => props.margin ? props.margin : 'auto'};
+    padding: ${props => props.padding};
 
     & img {
-        height: 100%;
+        height: ${props => props.imgheight ? props.imgheight : '100%'};
+        width:  ${props => props.imgwidth};
     }
 `
 
