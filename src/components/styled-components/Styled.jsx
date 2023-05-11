@@ -76,6 +76,7 @@ export const FlexContainer = styled(Container)`
     flex-direction: ${props => props.flex_direction};
     margin: ${props => props.margin};
     padding: ${props => props.padding ? props.padding : '0'};
+    background-color: ${props => props.background};
 `
 export const ImageContainer = styled(Container)`
     height: ${props => props.height};
