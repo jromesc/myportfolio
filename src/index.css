@@ -14,7 +14,8 @@ body {
   background-color: #222326 !important;
 }
 
-a, .mynav-brand {
+a,
+.mynav-brand {
   cursor: pointer;
 }
 
@@ -57,13 +58,66 @@ a.btn-outline-secondary.active {
   background-color: rgb(255, 202, 44) !important;
 }
 
-a:hover svg{
+a:hover svg {
   stroke: rgb(255, 202, 44) !important;
   transition: 0.2s ease-in-out;
 }
 
 @media (max-width: 991px) {
-  #side-dot-nav{
+  #side-dot-nav {
     position: absolute !important;
+  }
+}
+
+.text-container {
+  display: inline-block;
+}
+
+.text-container h1 {
+  overflow: hidden;
+  border-right: 2px solid rgb(255, 202, 44);
+  white-space: nowrap;
+  animation:
+    typing 6s infinite,
+    blink-caret .6s step-end infinite alternate;
+}
+
+@keyframes typing {
+  0% {
+    width: 0;
+  }
+
+  30% {
+    width: 80%;
+  }
+
+  40% {
+    width: 48%;
+  }
+
+  60% {
+    width: 100%;
+  }
+
+  100% {
+    width: 100%;
+  }
+}
+
+@keyframes blink-caret {
+
+  from,
+  to {
+    border-color: transparent;
+  }
+
+  50% {
+    border-color: rgb(255, 202, 44);
+  }
+}
+
+@media (max-width: 767px) {
+  .flex-wrapper {
+    display: block !important;
   }
 }

@@ -13,15 +13,14 @@ const Hero = () => {
     return (
         <div style={{ paddingTop: '49px' }} id='hero'>
             <MaxContainer padding='15rem 1rem 5rem 1rem'>
-                <div style={{marginLeft:'12rem'}}>
-                    {/* <ImageContainer size='100px' className='mb-4' data-aos="zoom-in" data-aos-delay="100" >
-
-                    </ImageContainer>
-                    <h1 data-aos="fade-right" data-aos-delay="200">Pleasure to meet you!</h1>
-                    <p className='mb-0' data-aos="fade-left" data-aos-delay="300">I am <span className='text-warning'>Jerome Cabrera</span>,</p>
-                    <p data-aos="fade-right" data-aos-delay="400">A BS Information Technology Graduate.</p> */}
-                    <h1 className='font-700' data-aos="fade-right" data-aos-delay="200">Hi! my name is <span className='text-warning' style={{fontSize: 'inherit'}}>Jerome Cabrera</span></h1>
-                    <p data-aos="fade-right" data-aos-delay="400">A BS Information Technology Graduate.</p> 
+                <div style={{ marginLeft: '10%' }}>
+                    <FlexContainer className='flex-wrapper' margin='0'>
+                        <h1 className='font-700' data-aos="fade-right" data-aos-delay="200">Hi! my name is&nbsp;</h1>
+                        <div className='text-container' data-aos="fade-left" data-aos-delay="200">
+                            <h1 className='type-text text-warning font-700'>Jerome Cabrera</h1>
+                        </div>
+                    </FlexContainer>
+                    <p data-aos="fade-right" data-aos-delay="400">A BS Information Technology Graduate.</p>
                 </div>
                 <div className='position-fixed ms-4' id='side-dot-nav' style={{ top: '1rem', left: '1rem' }}>
                     <FlexContainer height='620px' className='p-0' align='center'>
