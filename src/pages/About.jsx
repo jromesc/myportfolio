@@ -17,35 +17,6 @@ const About = () => {
                 <br />
                 <div data-aos="fade-left" data-aos-delay="300" className="border border-2 m-auto p-2 border-warning border-top-0 border-end-0 border-start-0 mb-5" style={{ width: '20%' }}></div>
                 <Row>
-                    <Col md='6' className='mtext-secondary'>
-                        <h5 data-aos="fade-left" data-aos-delay="400" className='font-500 mb-5'>Work Experience</h5>
-
-                        <p data-aos="fade-left" data-aos-delay="500" className='font-500 text-white'>IT Department Assistant (Internship)</p>
-                        <p data-aos="fade-left" data-aos-delay="500" className=''>Ilocos Sur Provincial Capitol | Ilocos Region, Philippines <br />2018</p>
-                        <p data-aos="fade-left" data-aos-delay="500" className=''>Responsible for providing administrative support to the IT department,
-                            as well as working in the Admin Office. My duties included:</p>
-                        <ul className='mb-5'>
-                            <li data-aos="fade-left" data-aos-delay="500">Assisting regular staff in the IT department and Admin Office with
-                                administrative tasks, such as paperwork and document distribution.</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Preparing and serving food and beverages to guests in a timely and efficient manner.</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Responding to guests' requests and concerns in a professional and courteous manner.</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Maintaining a clean and organized work area throughout the event.</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Collaborating with other staff members to ensure that all event logistics were properly coordinated.</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Following health and safety protocols at all times to ensure a safe and sanitary environment for guests.</li>
-                        </ul>
-
-                        <p data-aos="fade-left" data-aos-delay="500" className='font-bold text-white'>On Call Catering Service Server/Waiter</p>
-                        <p data-aos="fade-left" data-aos-delay="500" className=''>8.88 Restaurant & KTV Bar | Ilocos Region, Philippines<br />2016 - 2018</p>
-                        <p data-aos="fade-left" data-aos-delay="500" className=''>Responsible for ensuring that guests at catered events received exceptional service. My duties included:</p>
-                        <ul className=''>
-                            <li data-aos="fade-left" data-aos-delay="500">Setting up tables, chairs, and linens in accordance with event specifications</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Preparing and serving food and beverages to guests in a timely and efficient manner</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Responding to guests' requests and concerns in a professional and courteous manner</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Maintaining a clean and organized work area throughout the event.</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Collaborating with other staff members to ensure that all event logistics were properly coordinated</li>
-                            <li data-aos="fade-left" data-aos-delay="500">Following health and safety protocols at all times to ensure a safe and sanitary environment for guests</li>
-                        </ul>
-                    </Col>
                     <Col md='6'>
                         <h5 className='font-500 mb-5' data-aos="fade-left" data-aos-delay="400">Programming Experience</h5>
                         <Row>
@@ -83,7 +54,8 @@ const About = () => {
                                 <img src={TailwindCss} />
                             </ImageContainer></Col>
                         </Row>
-                        <br />
+                    </Col>
+                    <Col md='6'>
                         <h5 className='font-500 mb-5' data-aos="fade-left" data-aos-delay="400">Applications</h5>
                         <Row>
                             <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="500" size='50px' margin='0 0 2rem 0' mbg='none'>
@@ -107,13 +79,13 @@ const About = () => {
                             <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="1100" size='50px' margin='0 0 2rem 0' mbg='none'>
                                 <img src={VsCode} />
                             </ImageContainer></Col>
-                            <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="1100" size='50px' margin='0 0 2rem 0' mbg='none'>
+                            <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="1200" size='50px' margin='0 0 2rem 0' mbg='none'>
                                 <img src={Photoshop} />
                             </ImageContainer></Col>
-                            <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="1100" size='50px' margin='0 0 2rem 0' mbg='none'>
+                            <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="1300" size='50px' margin='0 0 2rem 0' mbg='none'>
                                 <img src={Illustrator} />
                             </ImageContainer></Col>
-                            <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="1100" size='50px' margin='0 0 2rem 0' mbg='none'>
+                            <Col xs='2'><ImageContainer data-aos="fade-left" data-aos-delay="1400" size='50px' margin='0 0 2rem 0' mbg='none'>
                                 <img src={Xd} />
                             </ImageContainer></Col>
                         </Row>

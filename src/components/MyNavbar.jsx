@@ -23,10 +23,10 @@ const MyNavbar = () => {
                 <Navbar.Toggle className='text-warning' />
                 <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto">
-                        <Link className='nav-link' to="hero" spy={true} smooth={true} duration={100}>HOME</Link>
-                        <Link className='nav-link' to="about" spy={true} smooth={true} duration={100}>ABOUT</Link>
-                        <Link className='nav-link' to="projects" spy={true} smooth={true} duration={100}>PROJECTS</Link>
-                        <Link className='nav-link' to="contacts" spy={true} smooth={true} duration={100}>CONTACTS</Link>
+                        <Link className='nav-link' to="hero" spy={true} smooth={true}>HOME</Link>
+                        <Link className='nav-link' to="about" spy={true} smooth={true} >ABOUT</Link>
+                        <Link className='nav-link' to="projects" spy={true} smooth={true}>PROJECTS</Link>
+                        <Link className='nav-link' to="contacts" spy={true} smooth={true}>CONTACTS</Link>
                     </Nav>
                     <Nav className="ms-5 nav-icons">
                         <Nav.Link onClick={() => handleButtonClick('navicon')} ><FiMail /></Nav.Link>

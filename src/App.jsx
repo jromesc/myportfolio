@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { MyNavbar, TsParticles, Footer, AlertError} from './components'
+import { MyNavbar, TsParticles, Footer, AlertError } from './components'
 import { Projects, About, Contacts, Hero } from './pages'
 import { ButtonProvider } from './ButtonContext';
 import { Element } from 'react-scroll'
