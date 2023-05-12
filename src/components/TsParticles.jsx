@@ -41,7 +41,7 @@ const TsParticles = () => {
                             quantity: 4,
                         },
                         repulse: {
-                            distance: 200,
+                            distance: 100,
                             duration: 0.4,
                         },
                     },
@@ -52,7 +52,7 @@ const TsParticles = () => {
                     },
                     links: {
                         color: "#ffffff",
-                        distance: 120,
+                        distance: 150,
                         enable: true,
                         opacity: 0.3,
                         width: 1,
@@ -84,7 +84,7 @@ const TsParticles = () => {
                         type: "",
                     },
                     size: {
-                        value: { min: 1, max: 5 },
+                        value: { min: 2, max: 5 },
                     },
                 },
                 detectRetina: true,

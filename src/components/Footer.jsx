@@ -7,7 +7,7 @@ import { BiCopyright } from 'react-icons/bi';
 
 const Footer = () => {
     return (
-        <div>
+        <div style={{backgroundColor: '#000'}}>
             <MaxContainer min_height='auto'>
                 <FooterContainer borderbottom='1px solid rgba(255, 255, 255, 0.08)'>
                     <Row style={{ width: '100%' }}>

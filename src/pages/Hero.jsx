@@ -1,6 +1,6 @@
 import React from 'react'
 import { MaxContainer, FlexContainer, ImageContainer } from '../components/styled-components/Styled'
-import { SquareDots } from '../components';
+import { SquareDots, TsParticles } from '../components';
 
 
 
@@ -12,7 +12,8 @@ const Hero = () => {
 
     return (
         <div style={{ paddingTop: '49px' }} id='hero'>
-            <MaxContainer padding='15rem 1rem 5rem 1rem'>
+            <MaxContainer padding='15rem 1rem 5rem 1rem' style={{ position: 'relative' }} min_height='100vh'>
+                <TsParticles />
                 <div style={{ marginLeft: '10%' }}>
                     <FlexContainer className='flex-wrapper' margin='0'>
                         <h1 className='font-700' data-aos="fade-right" data-aos-delay="200">Hi! my name is&nbsp;</h1>
@@ -32,8 +33,8 @@ const Hero = () => {
                         </FlexContainer>
                     </FlexContainer>
                 </div>
-                <SquareDots top='0' right='0' margin='0 1.5rem 0 0' animation='fade-down' delay='500' />
-                <SquareDots bottom='0' left='0' margin='0 0 1rem 0' animation='fade-up' delay='500' />
+                {/* <SquareDots top='0' right='0' margin='0 1.5rem 0 0' animation='fade-down' delay='500' />
+                <SquareDots bottom='0' left='0' margin='0 0 1rem 0' animation='fade-up' delay='500' /> */}
             </MaxContainer>
         </div>
     )

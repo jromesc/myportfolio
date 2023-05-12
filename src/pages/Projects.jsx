@@ -11,7 +11,7 @@ const Projects = () => {
     const { handleButtonClick } = useContext(ButtonContext);
 
     return (
-        <div>
+        <div style={{backgroundColor:'#000'}}>
             <MaxContainer >
                 <h5 className='font-700 mb-5 text-center' data-aos="fade-left">PROJECTS</h5>
                 <Row>
